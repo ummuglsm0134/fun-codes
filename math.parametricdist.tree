@@ -1,0 +1,9 @@
+from numpy import *
+import matplotlib.pyplot as plt
+
+t = linspace(0, 39*pi/2, 1000)
+x = t*cos(t)**3
+y = 9*t*sqrt(abs(cos(t))) + t*sin(0.2*t)*cos(4*t)
+plt.plot(x, y, c="green")
+plt.gca().set_aspect(0.3)
+plt.axis('off')
